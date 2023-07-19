@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Fontawsome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- image hover css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css">
+
+    <link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row px-3 main-title">
+                <div class="col-3 text-center">
+                    <img src="image/logotext.png" alt="" class="logo">
+                </div>
+                <div class="col-3 d-flex flex-row-reverse main-title">
+                    <span class="mx-3">
+                        <h5 class="title-text">Monday - Friday</h5>
+                        <p>8:00AM-8:00PM</p>
+                    </span>
+                    <i class="fa-regular fa-clock h2 title-icon"></i>
+
+                </div>
+                <div class="col-3 d-flex flex-row-reverse main-title">
+                    <span class="mx-3">
+                        <h5 class="title-text">Call</h5>
+                        <p>+959 40 40 60 366</p>
+                    </span>
+                    <i class="fa-solid fa-phone-volume h2 title-icon"></i>
+
+                </div>
+                <div class="col-3 text-center h2 d-flex justify-content-around px-5">
+                    <i class="fa-brands fa-facebook title-social" title="Facebook"></i>
+                    <i class="fa-brands fa-facebook-messenger title-social" title="Messenger"></i>
+                    <i class="fa-solid fa-envelope title-social" title="Email"></i>
+                    <i class="fa-brands fa-viber title-social" title="Viber"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <nav class=" shadow navbar-expand-lg" id="navbar">
+                <div class="container-fluid mynarBar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mx-3" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#course">Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#activities">Activities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#lecturer">Lacture</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+
+    </section>
+
+    <section id="home">
+        <div class="carousel-container">
+            <img class="carousel-image" src="image/slide1.JPG" alt="Carousel Image 1">
+            <img class="carousel-image" src="image/slide7.jpg" alt="Carousel Image 2">
+            <img class="carousel-image" src="image/slide5.jpg" alt="Carousel Image 3">
+            <img class="carousel-image" src="image/slide8.jpg" alt="Carousel Image 3">
+
+            <div class="carousel-title">
+                <div class="col text-center">
+                    <h1 class="mt-5 mt-5 bg-warning rounded">2-Year Software Engineer Certificate Program</h1>
+                    <h4 class="mt-5 pjtitle rounded">For Your Better Career and Brighter Future</h4>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Hide all carousel images except the first one initially
+            const carouselImages = document.querySelectorAll('.carousel-image');
+            for (let i = 1; i < carouselImages.length; i++) {
+                carouselImages[i].style.opacity = '0';
+            }
+
+            // Handle slideshow transition
+            let currentIndex = 0;
+            setInterval(() => {
+                carouselImages[currentIndex].style.opacity = '0';
+                carouselImages[currentIndex].style.transform = 'translateX(100%)';
+                currentIndex = (currentIndex + 1) % carouselImages.length;
+                carouselImages[currentIndex].style.opacity = '1';
+                carouselImages[currentIndex].style.transform = 'translateX(0)';
+            }, 3000);
+        </script>
+
+        <div class="row m-auto">
+            <div class="col d-flex justify-content-center home-four-content">
+                <div class="home-content text-center">
+                    <i class="fa-solid fa-laptop-code home-content-icon mt-2"></i>
+                    <h3 class="text-warning text-center mt-1">IP Courses</h3>
+                    <p class="text-white px-3 home-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                        unde perspiciatis fugiat laboriosam asperiores voluptas expedita aspernatur et nihil facilis.
+                    </p>
+
+                </div>
+                <div class="home-one text-center">
+                    <i class="fa-solid fa-user-graduate home-content-icon mt-2"></i>
+                    <h3 class="text-warning text-center mt-1">FE Courses</h3>
+                    <p class="text-white px-3 home-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                        unde perspiciatis fugiat laboriosam asperiores voluptas expedita aspernatur et nihil facilis.
+                    </p>
+
+                </div>
+                <div class="home-content text-center">
+                    <i class="fa-solid fa-chart-line home-content-icon mt-2"></i>
+                    <h3 class="text-warning text-center mt-1">Japanese Language</h3>
+                    <p class="text-white px-3 home-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                        unde perspiciatis fugiat laboriosam asperiores voluptas expedita aspernatur et nihil facilis.
+                    </p>
+
+                </div>
+                <div class="home-one text-center">
+                    <i class="fa-brands fa-gratipay home-content-icon mt-2"></i>
+                    <h3 class="text-warning text-center mt-1">Java Programming</h3>
+                    <p class="text-white px-3 home-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                        unde perspiciatis fugiat laboriosam asperiores voluptas expedita aspernatur et nihil facilis.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Course  -->
+    <section id="course" class="container mb-4 mt-4">
+        <div class="row text-center pt-5">
+            <h1 class="pt-3">Our <span class="title-back">Courses</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ex quaerat est non deserunt
+                architecto accusantium, et veritatis neque inventore aperiam! Unde, cum quibusdam! In quibusdam tempore
+                perspiciatis obcaecati hic!</p>
+        </div>
+        <div class="row">
+
+            <div class="col-4 mt-5">
+                <div class="card shadow m-auto main-card" style="width: 18rem;">
+                    <div class="card-body course-card">
+                        <div class=" rounded-circle course-logo m-auto text-center">
+                            <i class="fa-solid fa-laptop-code pt-3 text-warning"></i>
+                        </div>
+
+                        <h3 class="card-title text-center">Coding Basic</h3>
+
+                        <p>Expedita non iste doloribus dolorem totam ab quis at perferendis autem quam ea, incidunt
+                            aperiam animi. Adipisci temporibus itaque suscipit voluptatem magni!</p>
+
+                        <div class="text-center">
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 mt-5">
+                <div class="card shadow m-auto main-card" style="width: 18rem;">
+                    <div class="card-body course-card">
+                        <div class=" rounded-circle course-logo m-auto text-center">
+                            <i class="fa-solid fa-table pt-3 text-warning"></i>
+                        </div>
+
+                        <h3 class="card-title text-center">Spread Sheet</h3>
+
+                        <p>Expedita non iste doloribus dolorem totam ab quis at perferendis autem quam ea, incidunt
+                            aperiam animi. Adipisci temporibus itaque suscipit voluptatem magni!</p>
+
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 mt-5">
+                <div class="card shadow m-auto main-card" style="width: 18rem;">
+                    <div class="card-body course-card">
+                        <div class=" rounded-circle course-logo m-auto text-center">
+                            <i class="fa-brands fa-java pt-3 text-warning"></i>
+                        </div>
+
+                        <h3 class="card-title text-center">Java Programming</h3>
+
+                        <p>Expedita non iste doloribus dolorem totam ab quis at perferendis autem quam ea, incidunt
+                            aperiam animi. Adipisci temporibus itaque suscipit voluptatem magni!</p>
+
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 mt-5">
+                <div class="card shadow m-auto main-card" style="width: 18rem;">
+                    <div class="card-body course-card">
+                        <div class=" rounded-circle course-logo m-auto text-center">
+                            <i class="fa-solid fa-network-wired pt-3 text-warning"></i>
+                        </div>
+
+                        <h3 class="card-title text-center">A+ and Networking</h3>
+
+                        <p>Expedita non iste doloribus dolorem totam ab quis at perferendis autem quam ea, incidunt
+                            aperiam animi. Adipisci temporibus itaque suscipit voluptatem magni!</p>
+
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 mt-5">
+                <div class="card shadow m-auto main-card" style="width: 18rem;">
+                    <div class="card-body course-card">
+                        <div class=" rounded-circle course-logo m-auto text-center">
+                            <i class="fa-brands fa-php pt-3 text-warning"></i>
+                        </div>
+
+                        <h3 class="card-title text-center">PHP Programming</h3>
+
+                        <p>Expedita non iste doloribus dolorem totam ab quis at perferendis autem quam ea, incidunt
+                            aperiam animi. Adipisci temporibus itaque suscipit voluptatem magni!</p>
+
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 mt-5">
+                <div class="card shadow m-auto main-card" style="width: 18rem;">
+                    <div class="card-body course-card">
+                        <div class=" rounded-circle course-logo m-auto text-center">
+                            <i class="fa-solid fa-language pt-3 text-warning"></i>
+                        </div>
+
+                        <h3 class="card-title text-center">Japanese Language</h3>
+
+                        <p>Expedita non iste doloribus dolorem totam ab quis at perferendis autem quam ea, incidunt
+                            aperiam animi. Adipisci temporibus itaque suscipit voluptatem magni!</p>
+
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Activities  -->
+    <section id="activities" class="contact-section">
+        <div class="row text-center p-3 pt-5">
+            <h1 class="pt-3 text-warning">Our <span class="title-back">Activities</span></h1>
+        </div>
+
+        <div class="row px-5 py-3">
+            <div class="col-4">
+                <div class="card mt-3" style="width: 25rem;">
+                    <img src="image/act1.jpg" class="card-img-top activities-img" alt="...">
+                </div>
+            </div>
+            <div class="col-8">
+                <h4 class="text-warning">Group Description</h4>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, consectetur modi
+                    ipsam saepe
+                    voluptas voluptatem magnam dolores facilis natus ratione officiis aliquid voluptatibus, itaque
+                    dignissimos, impedit libero sapiente quam beatae?
+                    Corrupti, a accusantium! Quisquam totam iste earum deleniti voluptatem at autem mollitia iure odit
+                    consectetur aliquid molestiae non impedit animi magni natus nam eligendi porro, dolorum libero
+                    laudantium suscipit optio?</p>
+                <button class="btn btn-warning rounded text-white">View On Youtube</button>
+            </div>
+        </div>
+
+        <div class="row px-5">
+
+            <div class="col-8">
+                <h4 class="text-warning">Pritical Time</h4>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, consectetur modi
+                    ipsam saepe
+                    voluptas voluptatem magnam dolores facilis natus ratione officiis aliquid voluptatibus, itaque
+                    dignissimos, impedit libero sapiente quam beatae?
+                    Corrupti, a accusantium! Quisquam totam iste earum deleniti voluptatem at autem mollitia iure odit
+                    consectetur aliquid molestiae non impedit animi magni natus nam eligendi porro, dolorum libero
+                    laudantium suscipit optio?</p>
+                <button class="btn btn-warning rounded text-white">View On Youtube</button>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 25rem;">
+                    <img src="image/act4.JPG" class="card-img-top activities-img" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <div class="row p-5">
+            <div class="col-4">
+                <div class="card" style="width: 25rem;">
+                    <img src="image/act3.JPG" class="card-img-top activities-img" alt="...">
+                </div>
+            </div>
+            <div class="col-8">
+                <h4 class="text-warning">Excursion</h4>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, consectetur modi
+                    ipsam saepe
+                    voluptas voluptatem magnam dolores facilis natus ratione officiis aliquid voluptatibus, itaque
+                    dignissimos, impedit libero sapiente quam beatae?
+                    Corrupti, a accusantium! Quisquam totam iste earum deleniti voluptatem at autem mollitia iure odit
+                    consectetur aliquid molestiae non impedit animi magni natus nam eligendi porro, dolorum libero
+                    laudantium suscipit optio?</p>
+                <button class="btn btn-warning rounded text-white">View On Youtube</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Lecturers  -->
+    <section id="lecturer" class="container">
+        <div class="row text-center pt-5">
+            <h1 class="pt-3">Our <span  class="title-back">Lecturers</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ex quaerat est non deserunt
+                architecto accusantium, et veritatis neque inventore aperiam! Unde, cum quibusdam! In quibusdam tempore
+                perspiciatis obcaecati hic!</p>
+        </div>
+        <div class="row d-flex justify-content-around">
+            <div class="card shadow tr-card" style="width: 18rem;">
+                <figure class="imghvr-hinge-down mt-2">
+                    <img src="image/tr2.jpg">
+                    <figcaption class="figcaption">
+                        <h4 class="animate__animated animate__bounce ">M.C.Sc (UCSM) </h4>
+                        <h6> Former Ph.D Scholarship (SIIT, Thammasat University, Thailand)</h6>
+                    </figcaption>
+                </figure>
+                <h3 class="tr-name text-center mt-2">Teacher 1</h3>
+                <h5 class="text-center mt-2"><i>Principal of HMI</i></h5>
+
+                <div class="row p-4">
+                    <div class="d-flex justify-content-around">
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-facebook"
+                                title="Facebook"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-instagram"
+                                title="Instagram"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-line" title="Line"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-linkedin"
+                                title="Link In"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow tr-card" style="width: 18rem;">
+                <figure class="imghvr-hinge-down mt-2">
+                    <img src="image/tr3.jpg">
+                    <figcaption class="figcaption">
+                        <h4 class="animate__animated animate__bounce ">M.C.Sc (UCSM) </h4>
+                        <h6> Former Ph.D Scholarship (SIIT, Thammasat University, Thailand)</h6>
+                    </figcaption>
+                </figure>
+                <h3 class="tr-name text-center mt-2">Teacher 2</h3>
+                <h5 class="text-center mt-2"><i>A+ and Networking Engineer</i></h5>
+
+                <div class="row p-4">
+                    <div class="d-flex justify-content-around">
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-facebook"
+                                title="Facebook"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-instagram"
+                                title="Instagram"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-line" title="Line"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-linkedin"
+                                title="Link In"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow tr-card" style="width: 18rem;">
+                <figure class="imghvr-hinge-down mt-2">
+                    <img src="image/tr4.jpg">
+                    <figcaption class="figcaption">
+                        <h4 class="animate__animated animate__bounce ">M.C.Sc (UCSM) </h4>
+                        <h6> Former Ph.D Scholarship (SIIT, Thammasat University, Thailand)</h6>
+                    </figcaption>
+                </figure>
+                <h3 class="tr-name text-center mt-2">Teacher 3</h3>
+                <h5 class="text-center mt-2"><i>Java Web Developer</i></h5>
+
+                <div class="row p-4">
+                    <div class="d-flex justify-content-around">
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-facebook"
+                                title="Facebook"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-instagram"
+                                title="Instagram"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-line" title="Line"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-linkedin"
+                                title="Link In"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow mt-5 tr-card" style="width: 18rem;">
+                <figure class="imghvr-hinge-down mt-2">
+                    <img src="image/tr5.webp">
+                    <figcaption class="figcaption">
+                        <h4 class="animate__animated animate__bounce ">M.C.Sc(UCSM) </h4>
+                        <h6> Former Ph.D Scholarship (SIIT, Thammasat University, Thailand)</h6>
+                    </figcaption>
+                </figure>
+                <h3 class="tr-name text-center mt-2">Teacher 4</h3>
+                <h5 class="text-center mt-2"><i>Projects Manager</i></h5>
+
+                <div class="row p-4">
+                    <div class="d-flex justify-content-around">
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-facebook"
+                                title="Facebook"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-instagram"
+                                title="Instagram"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-line" title="Line"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-linkedin"
+                                title="Link In"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow mt-5 tr-card" style="width: 18rem;">
+                <figure class="imghvr-hinge-down mt-2">
+                    <img src="image/tr1.jpg">
+                    <figcaption class="figcaption">
+                        <h4 class="animate__animated animate__bounce ">M.C.Sc(UCSM) </h4>
+                        <h6> Former Ph.D Scholarship (SIIT, Thammasat University, Thailand)</h6>
+                    </figcaption>
+                </figure>
+                <h3 class="tr-name text-center mt-2">Teacher 5</h3>
+                <h5 class="text-center mt-2"><i>PHP Web Developer</i></h5>
+
+                <div class="row p-4">
+                    <div class="d-flex justify-content-around">
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-facebook"
+                                title="Facebook"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-instagram"
+                                title="Instagram"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-line" title="Line"></i></a>
+                        <a href="#" class="tr-social"><i class="h3 text-success fa-brands fa-linkedin"
+                                title="Link In"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Student review -->
+
+    <section>
+        <div class="row text-center pt-5">
+            <h1 class="pt-3">Students' <span  class="title-back">Review</span></h1>
+        </div>
+        <div class="row p-5">
+
+            <div class="col-6 m-auto">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner p-4 review-bg rounded">
+                        <div class="carousel-item active text-center" data-bs-interval="5000">
+                            <h3 class="text-warning">Zin Myo</h3>
+                            <span>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </span>
+                            <p class="px-5 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reiciendis laboriosam nam voluptatibus sequi eos veniam quaerat nobis explicabo
+                                distinctio sunt reprehenderit, odio fugit, porro quos libero inventore odit voluptate
+                                provident!</p>
+
+                        </div>
+                        <div class="carousel-item text-center" data-bs-interval="5000">
+                            <h3 class="text-warning">Htet Aung</h3>
+                            <span>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </span>
+                            <p class="px-5 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reiciendis laboriosam nam voluptatibus sequi eos veniam quaerat nobis explicabo
+                                distinctio sunt reprehenderit, odio fugit, porro quos libero inventore odit voluptate
+                                provident!</p>
+
+                        </div>
+
+                        <div class="carousel-item text-center" data-bs-interval="5000">
+                            <h3 class="text-warning"> Aung Aung</h3>
+                            <span>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                            </span>
+                            <p class="px-5 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reiciendis laboriosam nam voluptatibus sequi eos veniam quaerat nobis explicabo
+                                distinctio sunt reprehenderit, odio fugit, porro quos libero inventore odit voluptate
+                                provident!</p>
+
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Us section  -->
+    <section id="contact" class="contact-section">
+        <div class="row pt-5">
+            <div class="col text-center">
+                <h1 class="pt-3 text-warning">Contact Us</h1>
+                <p class="px-5 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus alias
+                    quae iste et reprehenderit neque, cumque dolores exercitationem porro minima tempore sunt dolore
+                    nesciunt, eum nam laudantium! Maxime, ea reprehenderit?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 px-5">
+                <iframe class="rounded iframe-border border-warning"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.8146509341327!2d96.08667497453648!3d21.903212057172755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d68c3d6f2ab%3A0x7af4dabf869eca9!2sHost%20Myanmar%20Institute(HMI)!5e0!3m2!1sen!2smm!4v1689768685976!5m2!1sen!2smm"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-6">
+                <form class="transparent-form px-5">
+                    <div class="form-group">
+                        <h3 class="text-warning">Contact Form</h3>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <div class="d-flex flex-row-reverse"><button type="submit" class="btn submit-btn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+
+
+        </div>
+        <div class="row p-4">
+            <div class="col text-center">
+                <h5>Copy Right &copy; HMI-2023</h5>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="page.js"></script>
+    <script src="slick-master/slick/slick.min.js"></script>
+
+</body>
+
+</html>

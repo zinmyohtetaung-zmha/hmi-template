@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root {
+    --main-color: #012060;
+    --text-color: #fff;
+    --btn-color: #1FA7DF;
+    --bg-color: #4B80C2;
+
+}
+
+body {
+    background-color: #E7FDFD !important;
+}
+
+.logo {
+    height: 3rem;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: 3s;
+}
+.mynarBar {
+    background-color: var(--main-color);
+    padding: 5px;
+ 
+}
+
+.main-title {
+    align-items: center;
+}
+
+.title {
+    color: var(--bg-color);
+    font-weight: bolder;
+}
+
+.title-icon {
+    color: var(--btn-color);
+}
+
+.title-text {
+    color: var(--main-color);
+}
+
+.title-social {
+    color: var(--btn-color);
+    transition: 0.3s;
+}
+
+.title-social:hover {
+    color: var(--main-color);
+}
+
+.nav-item:hover a {
+    background-color: var(--text-color);
+    color: var(--main-color) !important;
+    border: 2px solid var(--main-color);
+}
+
+.nav-item a {
+    width: 100px;
+    text-align: center;
+    border: 2px solid var(--main-color);
+    transition: 0.5s;
+    font-weight: 900;
+    padding: 10px;
+
+}
+
+.nav-style {
+    width: 100px;
+    height: 40px;
+    /* background-color:#26B25B; */
+    background-color: var(--btn-color);
+    margin-left: -30px;
+}
+
+.nav-style-end {
+    width: 100px;
+    height: 40px;
+    background-color: #EDB91C;
+    margin-right: -10px;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 700px;
+    margin-top: -50px;
+}
+
+.carousel-title {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: var(--main-color);
+    text-shadow: 2px 2px 4px var(--main-color);
+    font-size: 10rem;
+    background-color: rgba(46, 41, 41, 0.5);
+    padding: 300px;
+}
+
+.pjtitle {
+    color: #EDB91C;
+    text-shadow: 5px 5px 10px var(--main-color);
+
+}
+
+.home {
+    margin-top: -7px;
+}
+
+.home-title {
+    text-align: center;
+    position: static;
+}
+
+.home-content {
+    width: 20%;
+    height: 250px;
+    background-color: var(--main-color);
+    transition: 1s;
+    margin-top: -30px;
+}
+
+.home-one {
+    width: 20%;
+    height: 250px;
+    background-color: var(--bg-color);
+    transition: 1s;
+    margin-top: -30px;
+
+
+}
+
+.home-para {
+    text-align: center;
+}
+
+.home-content-icon {
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.home-content:hover {
+    margin-top: -70px;
+}
+
+.home-one:hover {
+    margin-top: -70px;
+
+}
+
+.home-four-content {
+    z-index: 10;
+}
+
+/* Course section css  */
+
+.title-back {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 187, 0);
+}
+
+.course-logo {
+    width: 100px;
+    height: 100px;
+    border: 4px solid var(--btn-color);
+
+}
+
+.course-logo i {
+    font-size: 3em;
+    text-align: center;
+    align-items: center;
+}
+
+.course-card:hover .course-logo {
+    background-color: #E7FDFD;
+}
+
+.course-card h3 {
+    color: var(--main-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.course-card p {
+    text-align: justify;
+    color: var(--main-color);
+}
+
+.course-card a {
+    background-color: var(--btn-color);
+    color: var(--text-color);
+}
+
+.course-card a:hover {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+/* Our lectures section  */
+[class*=" imghvr-"],
+[class^=imghvr-] {
+    background-color: green;
+}
+
+.figcaption {
+    background-color: var(--btn-color) !important;
+}
+
+.tr-name {
+    color: green;
+    text-shadow: 2px 2px 4px var(--btn-color);
+}
+
+.tr-card {
+    border: 4px solid var(--text-color) !important;
+    transition: 0.3s;
+}
+
+.tr-card:hover {
+    background-color: #E7FDFD;
+    box-shadow: 2px 2px 4px rgba(3, 82, 20, 0.911);
+    border: 4px solid var(--btn-color) !important;
+}
+
+.tr-social i {
+    transition: 0.5s;
+}
+
+.tr-social:hover i {
+    color: var(--main-color) !important;
+    margin-top: -10px;
+    font-size: 2rem;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Activities section  */
+.activities-img {
+    transition: transform 0.3s ease;
+}
+
+.activities-img:hover {
+    transform: scale(1.1);
+
+}
+
+
+/* content form  */
+.transparent-form {
+    background-color: transparent;
+    border: none;
+}
+
+.transparent-form h2 {
+    color: #ffffff;
+    /* Set the text color */
+}
+
+.transparent-form .form-group {
+    margin-bottom: 20px;
+}
+
+.transparent-form label {
+    display: block;
+    color: #ffffff;
+    /* Set the label color */
+    margin-bottom: 5px;
+}
+
+.transparent-form input[type="text"],
+.transparent-form input[type="email"],
+.transparent-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00a0e9;
+    /* Set the input border color to blue */
+    background-color: rgba(227, 227, 245, 0.3);
+    /* Set the input background color to blue with transparency */
+    color: #ffffff;
+    /* Set the input text color */
+}
+
+.transparent-form input[type="text"]:focus,
+.transparent-form input[type="email"]:focus,
+.transparent-form textarea:focus {
+    outline: none;
+    /* Remove the default focus outline */
+    box-shadow: 0 0 5px #00a0e9;
+    /* Add a blue box-shadow when the input is focused */
+}
+
+.transparent-form textarea {
+    resize: vertical;
+}
+
+.transparent-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    /* Set the button background color */
+    border: none;
+    color: #000000;
+    /* Set the button text color */
+    cursor: pointer;
+}
+
+
+.contact-section {
+    background: linear-gradient(to right, var(--btn-color), var(--main-color));
+}
+
+.iframe-border {
+    border: 5px solid rgb(255, 208, 0) !important;
+}
+
+.submit-btn {
+    background-color: rgba(227, 227, 245, 0.3) !important;
+    color: var(--text-color) !important;
+    border: 2px solid rgb(255, 208, 0) !important;
+}
+
+/* review section  */
+.carousel-review-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* Review section  */
+.review-bg{
+    background-color: var(--main-color);
+    border: 3px solid var(--btn-color);
+}
