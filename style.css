@@ -120,6 +120,16 @@ body {
 
 }
 
+.apply-now{
+    color: var(--main-color) !important;
+    font-weight: bolder !important;
+    border-radius: 50px !important;
+}
+
+.itpce{
+    border-radius: 5px;
+}
+
 .home {
     margin-top: -7px;
 }
